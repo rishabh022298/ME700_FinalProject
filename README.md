@@ -41,3 +41,9 @@ A lot of effort has gone into understanding this problem of how these reproducib
 In this figure, $P = bv/D$ where $b$ is the half width of the glass strip, $v$ is the velocity and $D$ is the diffusion constant. On *y*-axis, $K_I$ is the stress intensity factor for mode-I cracks, $\alpha_T$ is the coefficient of thermal expansion, $\Delta T$ is the difference in temperature from cold bath to heated oven, $E$ is the Young's modulus and $\Gamma$ is the energy release rate. It has to be noted that the lower solid line represents where crack starts propagating in the phase diagram. So $\Gamma$ corresponding to this line can also be called as $\Gamma_c$ (critical energy release rate). 
 
 The goal for this project is to mimic the similar system to run the numerical simulations and verify crack propagation for different regimes.
+
+Now, one way to simulate this system is to fix the temperature regions and pull the strip, but that will require understanding how to impose velocity on the system without affecting the physics of the problem. The other way is to move the temperature field along the strip itself. If there's one unusal thing about this problem then it's that it is free from traction as well as Dirichlet boundary conditions on all boundaries (see [Corson et al](https://link.springer.com/article/10.1007/s10704-009-9361-4)), so it is important to validate the intermediate steps related to fracture simulation before running these simulation itself.
+
+![movingtemp](figures/tempan.gif)
+
+## Variational Form

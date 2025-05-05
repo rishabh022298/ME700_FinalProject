@@ -89,7 +89,11 @@ Clearly, there's no change in crack itself but the whole domain is shrinking. We
 
 We can see that the stresses are more or less zero (the values being orders of magnitude small).
 
+**Note:** The information for running scripts for generating the above mentioned and upcoming results is provided later in the Reproducibility section.
+
 ## Results
+
+Now that we have ensured that the scripts are working fine, so we can move on to visualizing the different crack propagation scenarios.
 
 ### No Crack Propagation
 

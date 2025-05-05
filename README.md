@@ -55,4 +55,36 @@ Where, $\lambda_1$ is a vector type Lagrange multiplier restricting rigid body d
 
 For the phase field evolution for simulating the crack propagation, formulation given by [Ambati et al](https://link.springer.com/article/10.1007/s00466-014-1109-y) is used. Damage parameter $d = 1$ represents cracked state and $d = 0$ represents intact state. The formulation for energy functional associated with phase field evolution is omitted as it might create unnecessary confusion. Reader is requested to give a look to the work of [Ambati et al](https://link.springer.com/article/10.1007/s00466-014-1109-y) and [Miehe et al](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.2861) to understand the derivation of the energy functional for phase field evolution.
 
-##
+## Validation
+
+As it was mentioned earlier, that it might be really difficult to be one hundred percent sure of numerical simulations related to fracture. So it is important to break down the problem into smaller chunks and verify them one by one before moving to the coupled problem.
+
+### 1. Crack propagation due to simple loading
+
+To verify if the phase field evolution itself is working, a crack propagation simulation was run and the energy release rate $G$ was recorded before the crack propagation started. This was done to ensure that the numerical result can be verified against a similar problem for which analytical result is known. A 2D square plate seeded with a straight edge crack was pulled with uniform displacements at top and bottom as shown in the figure.
+
+![schematicpull](figures/schematic_pull.png)
+
+The variation of $G$ with increasing uniform displacement can be seen in the following figure.
+
+![err](figures/err.png)
+
+Please note that $G$ is being recorded only until the point before the crack propagation starts because the [analytical result](https://www.sciencedirect.com/book/9780123850010/fracture-mechanics) exists for an infinite body with semi infinite crack subjected to similar loads. So comparison can only be made before the crack propagation starts as the energy release rate's value will change once the crack propagation has started.
+
+The energy release rate is calculated using the [domain J-integral method](https://link.springer.com/book/10.1007/978-94-007-2595-9).
+
+### 2. Free contraction of a material due to decreasing temperature.
+
+Schematic from the previous section should be enough to explain this. The only difference is that the displacement boundary condition has been removed from top and bottom and the domain is allowed to freely expand and contract. Temperature is decreased for the whole domain uniformly so that it leads to uniform shrinkage.
+
+![def](figures/freezingnobc.gif)
+
+Clearly, there's no change in crack itself but the whole domain is shrinking. We can further verify if the simulation is working or not by looking at the stress fields.
+
+![sxx](figures/sxx.gif)
+
+![sxy](figures/sxy.gif)
+
+![syy](figures/syy.gif)
+
+We can see that the stresses are more or less zero (the values being orders of magnitude small).

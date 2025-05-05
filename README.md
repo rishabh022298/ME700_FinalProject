@@ -29,3 +29,13 @@ Where $e$ is the strain due to elastic behavior, $\epsilon$ is the total strain 
 $$\sigma_{ij} = \lambda e_{kk}\delta_{ij} + 2\mu e_{ij}$$
 
 ## Problem Statement
+
+[Yuse and Sano](https://www.nature.com/articles/362329a0) performed an experiment in 1993 in which they pulled a long thin glass strip from a heated oven to a cold bath. They found out that as the velocity of pulling is increased, then a straight crack appears. Further increase in velocity leads to oscillatory cracks and further increase leads to bifurcation.
+
+![yuseandsano](figures/yuseandsano.png)
+
+A lot of effort has gone into understanding this problem of how these reproducible patterns are observed even though fracture itself is a highly non linear phenomenon. Mokhtar and Yves(https://journals.aps.org/pre/abstract/10.1103/PhysRevE.52.4105) did a linear stability analysis to identify the different conditions for crack propagation.
+
+![condition](figures/cond.png)
+
+In this figure, $P = bv/D$ where $b$ is the half width of the glass strip, $v$ is velocity and $D$ is the diffusion constant. On *y*-axis, $K_I$ is the stress intensity factor for mode-I cracks, $\alpha_T$ is the coefficient of thermal expansion, $\Delta T$ is the difference in temperature from cold bath to heated oven, $E$ is Young's modulus and $\Gamma$ is energy release rate. It has to be noted that the lower solid line represents where crack starts propagating in the phase diagram. So $\Gamma$ corresponding to this line can also be called as $\Gamma_c$ for critical energy release rate. 

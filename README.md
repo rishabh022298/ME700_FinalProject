@@ -9,3 +9,5 @@ Problems related to growth and fracture have been a topic of interest for some t
 Here's another example from [Plummer et al](https://pubs.rsc.org/en/content/articlelanding/2024/sm/d3sm01470c) in which a hydrogel is allowed to swell in a constrained environment.
 
 ![Plummer et al](figures/hydrogelswelling.gif)
+
+Even though the field of fracture mechanics is at least a century old, but still it is very difficult to be confident about the numerical simulations one is running related to it. And the literature related to growth and fracture is not very vast but thankfully, growth strains and thermal strains are implemented on a system in exactly similar fashion (Please note that the discussion here is limited to implementing growth or thermal strains, but not the physics behind how those strains are being produced in the first place. For more information, please check out the chapters 13 and 14 of this book on growth by [Alain Goriely](https://link.springer.com/book/10.1007/978-0-387-87710-5)). 

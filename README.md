@@ -47,6 +47,12 @@ Now, one way to simulate this system is to fix the temperature regions and pull 
 ![movingtemp](figures/tempan.gif)
 
 ## Setting up the Problem
-Since there are no boundary conditions to restrict rigid body motion, the elastic energy is modified to include penalties for rigid body motion using Lagrange multipliers.
+Since there are no boundary conditions to restrict rigid body motion, the elastic energy density is modified to include penalties for rigid body motion using Lagrange multipliers.
 
 $$W = \frac{1}{2}\sigma:e + \lambda_1\cdot u + \lambda_2\mathrm{det(grad}u)$$
+
+Where, $\lambda_1$ is a vector type Lagrange multiplier restricting rigid body displacements and $\lambda_2$ is a scalar multiplier to restrict rigid body rotations.
+
+For the phase field evolution for simulating the crack propagation, formulation given by [Ambati et al](https://link.springer.com/article/10.1007/s00466-014-1109-y) is used. Damage parameter $d = 1$ represents cracked state and $d = 0$ represents intact state. The formulation for energy functional associated with phase field evolution is omitted as it might create unnecessary confusion. Reader is requested to give a look to the work of [Ambati et al](https://link.springer.com/article/10.1007/s00466-014-1109-y) and [Miehe et al](https://onlinelibrary.wiley.com/doi/abs/10.1002/nme.2861) to understand the derivation of the energy functional for phase field evolution.
+
+##

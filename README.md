@@ -16,4 +16,4 @@ The deformation gradient $F$ can be decomposed into the product of two tensors, 
 
 $$F = AG$$
 
-Where $F = I + \mathr{grad}(u)$ as usual.
+Where $F = I + \mathrm{grad}(u)$ as usual.

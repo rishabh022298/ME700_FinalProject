@@ -46,4 +46,7 @@ Now, one way to simulate this system is to fix the temperature regions and pull 
 
 ![movingtemp](figures/tempan.gif)
 
-## Variational Form
+## Setting up the Problem
+Since there are no boundary conditions to restrict rigid body motion, the elastic energy is modified to include penalties for rigid body motion using Lagrange multipliers.
+
+$$W = \frac{1}{2}\sigma:e + \lambda_1\cdot u + \lambda_2\mathrm{det(grad}u)$$

@@ -88,3 +88,19 @@ Clearly, there's no change in crack itself but the whole domain is shrinking. We
 ![syy](figures/syy.gif)
 
 We can see that the stresses are more or less zero (the values being orders of magnitude small).
+
+## Results
+
+### No Crack Propagation
+
+![static](figures/static.gif)
+
+### Straight Crack Propagation
+
+![moving](figures/moving.gif)
+
+### Oscillatory Crack
+
+![osc](figures/osc.gif)
+
+### Phase Diagram

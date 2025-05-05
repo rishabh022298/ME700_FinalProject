@@ -16,4 +16,6 @@ The deformation gradient $F$ can be decomposed into the product of two tensors, 
 
 $$\mathrm{F} = \mathrm{AG}$$
 
-Where $\mathrm{F} = \mathrm{I} + \mathrm{grad}(u)$ as usual.
+Where $\mathrm{F} = \mathrm{I} + \mathrm{grad}(u)$ as usual. Therefore,
+
+$$\mathrm{A} = \mathrm{FG^{-1}}

@@ -18,4 +18,4 @@ $$\mathrm{F} = \mathrm{AG}$$
 
 Where $\mathrm{F} = \mathrm{I} + \mathrm{grad}(u)$ as usual. Therefore,
 
-$$\mathrm{A} = \mathrm{FG^{-1}}
+$$\mathrm{A} = \mathrm{FG^{-1}}$$

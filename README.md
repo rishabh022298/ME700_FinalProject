@@ -11,3 +11,9 @@ Here's another example from [Plummer et al](https://pubs.rsc.org/en/content/arti
 ![Plummer et al](figures/hydrogelswelling.gif)
 
 Even though the field of fracture mechanics is at least a century old, but still it is very difficult to be confident about the numerical simulations one is running related to it. And the literature related to growth and fracture is not very vast but thankfully, growth strains and thermal strains are implemented on a system in exactly similar fashion (Please note that the discussion here is limited to implementing growth or thermal strains, but not the physics behind how those strains are being produced in the first place. For more information, please check out the chapters 13 and 14 of this book on growth by [Alain Goriely](https://link.springer.com/book/10.1007/978-0-387-87710-5)). 
+
+The deformation gradient $F$ can be decomposed into the product of two tensors, $A$ due to residual stresses and $G$ (or $T$ for thermal strain) due to growth
+
+$$F = AG$$
+
+Where $F = I + \mathr{grad}(u)$ as usual.

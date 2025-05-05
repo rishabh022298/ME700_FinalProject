@@ -14,6 +14,6 @@ Even though the field of fracture mechanics is at least a century old, but still
 
 The deformation gradient $F$ can be decomposed into the product of two tensors, $A$ due to residual stresses and $G$ (or $T$ for thermal strain) due to growth
 
-$$\mathrm{**F**} = \mathrm{**A** **G**}$$
+$$\mathrm{F} = \mathrm{AG}$$
 
-Where $\mathrm{**F**} = \mathrm{**I**} + \mathrm{grad}(u)$ as usual.
+Where $\mathrm{F} = \mathrm{I} + \mathrm{grad}(u)$ as usual.

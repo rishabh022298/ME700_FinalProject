@@ -10,7 +10,7 @@ Here's another example from [Plummer et al](https://pubs.rsc.org/en/content/arti
 
 ![Plummer et al](figures/hydrogelswelling.gif)
 
-Even though the field of fracture mechanics is at least a century old, but still it is very difficult to be confident about the numerical simulations one is running related to it. And the literature related to growth and fracture is not very vast but thankfully, growth strains and thermal strains are implemented on a system in exactly similar fashion (Please note that the discussion here is limited to implementing growth or thermal strains, but not the physics behind how those strains are being produced in the first place. For more information, please check out the chapters 13 and 14 of this book on growth by [Alain Goriely](https://link.springer.com/book/10.1007/978-0-387-87710-5)). 
+Even though the field of fracture mechanics is at least a century old, but still it is very difficult to be confident about the numerical simulations one is running related to it. And the literature related to growth and fracture is not very vast but thankfully, growth strains and thermal strains are implemented on a system in exactly similar fashion (Please note that the discussion here is limited to implementing growth or thermal strains, but not the physics behind how those strains are being produced in the first place. For more information, please check out the chapters 13 and 14 of the book on biological growth by [Alain Goriely](https://link.springer.com/book/10.1007/978-0-387-87710-5)). 
 
 The deformation gradient $F$ can be decomposed into the product of two tensors, $A$ due to residual stresses and $G$ (or $T$ for thermal strain) due to growth
 
@@ -34,8 +34,8 @@ $$\sigma_{ij} = \lambda e_{kk}\delta_{ij} + 2\mu e_{ij}$$
 
 ![yuseandsano](figures/yuseandsano.png)
 
-A lot of effort has gone into understanding this problem of how these reproducible patterns are observed even though fracture itself is a highly non linear phenomenon. Mokhtar and Yves(https://journals.aps.org/pre/abstract/10.1103/PhysRevE.52.4105) did a linear stability analysis to identify the different conditions for crack propagation.
+A lot of effort has gone into understanding this problem of how these reproducible patterns are observed even though fracture itself is a highly non linear phenomenon. [Mokhtar and Yves](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.52.4105) did a linear stability analysis to identify the different conditions for crack propagation.
 
 ![condition](figures/cond.png)
 
-In this figure, $P = bv/D$ where $b$ is the half width of the glass strip, $v$ is velocity and $D$ is the diffusion constant. On *y*-axis, $K_I$ is the stress intensity factor for mode-I cracks, $\alpha_T$ is the coefficient of thermal expansion, $\Delta T$ is the difference in temperature from cold bath to heated oven, $E$ is Young's modulus and $\Gamma$ is energy release rate. It has to be noted that the lower solid line represents where crack starts propagating in the phase diagram. So $\Gamma$ corresponding to this line can also be called as $\Gamma_c$ for critical energy release rate. 
+In this figure, $P = bv/D$ where $b$ is the half width of the glass strip, $v$ is velocity and $D$ is the diffusion constant. On *y*-axis, $K_I$ is the stress intensity factor for mode-I cracks, $\alpha_T$ is the coefficient of thermal expansion, $\Delta T$ is the difference in temperature from cold bath to heated oven, $E$ is the Young's modulus and $\Gamma$ is the energy release rate. It has to be noted that the lower solid line represents where crack starts propagating in the phase diagram. So $\Gamma$ corresponding to this line can also be called as $\Gamma_c$ (critical energy release rate). 

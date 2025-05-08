@@ -110,6 +110,8 @@ deltaT = 0.0001  # For load steps
 tol = 1e-3        # For staggered scheme
 conc_f = File("./ResultsDir/phi.pvd")
 conc_u = File("./ResultsDir/u.pvd")
+sigmaxx_file = File("./ResultsDir/sxx.pvd")
+sigmaxy_file = File("./ResultsDir/sxy.pvd")
 sigmayy_file = File("./ResultsDir/syy.pvd")
 fname2 = open('JInt.txt', 'w')
 fname3 = open('Itercount.txt','w')
@@ -147,6 +149,14 @@ while t <= 0.004:
 
         if err < tol:
             print('Iterations:', iter, ', Total time', t)
+            sigma_xx = sigma(unew)[0, 0]
+            sigma_xx = project(sigma_yy, WW)
+            sigma_xx.rename("sigma_xx","sigma xx")
+            sigmaxx_file << sigma_xx
+            sigma_xy = sigma(unew)[0, 1]
+            sigma_xy = project(sigma_xy, WW)
+            sigma_xy.rename("sigma_xy","sigma xy")
+            sigmaxy_file << sigma_xy
             sigma_yy = sigma(unew)[1, 1]
             sigma_yy = project(sigma_yy, WW)
             sigma_yy.rename("sigma_yy","sigma yy")

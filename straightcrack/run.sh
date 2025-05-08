@@ -6,4 +6,4 @@
 #$ -pe omp 36
 module purge
 module load fenics/2019.1.0
-run_fenics.sh python3 thermal.py
+run_fenics.sh python3 main.py

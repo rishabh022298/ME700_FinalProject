@@ -158,3 +158,39 @@ When bash script from [thermal_loading](https://github.com/rishabh022298/ME700_F
 - u.pvd: For visualising the displacements
 - sxx.pvd, sxy.pvd, syy.pvd: Stress components
 
+### Results
+
+The file in the [straight crack folder](https://github.com/rishabh022298/ME700_FinalProject/tree/main/straightcrack) or [oscillatory crack folder](https://github.com/rishabh022298/ME700_FinalProject/tree/main/oscillatorycrack) can be run by executing the following command on SCC:
+
+```bash
+qsub run.sh
+```
+Please use the following values by editing the python file in either folders to reproduce the datasets for the points mentioned in the [phase diagram](https://github.com/rishabh022298/ME700_FinalProject/blob/main/figures/phasediagram.png).
+Lines 45-47 have to be edited everytime before running the script for each data point as automation was not implemented as it is difficult to be sure about every fracture simulation if it is going to work or not.
+- Line 45: lmbda = # insert value here for lame's parameter
+- Line 46: mu = # insert value here for shear modulus
+- Line 47: P = Constant() # insert value inside braces for nondimensional velocity
+
+All of the combinations for different parameters that were used for generating the phase diagram are mentioned in the following table.
+
+| Crack Type     | Folder name to execute the file      | λ (lmbda)  | μ (mu) | P     |
+|----------------|--------------------------------------|------------|--------|-------|
+| Not moving     | Either                               | 30e3       | 20e3   | 5.0   |
+| Not moving     | Either                               | 15e3       | 10e3   | 5.0   |
+| Not moving     | Either                               | 15e3       | 10e3   | 6.0   |
+| Not moving     | Either                               | 15e3       | 10e3   | 7.0   |
+| Not moving     | Either                               | 15e3       | 10e3   | 8.0   |
+| Not moving     | Either                               | 15e3       | 10e3   | 9.0   |
+| Not moving     | Either                               | 15e3       | 10e3   | 10.0  |
+| Straight       | straightcrack                        | 300e3      | 200e3  | 5.0   |
+| Straight       | straightcrack                        | 150e3      | 100e3  | 5.0   |
+| Straight       | straightcrack                        | 150e3      | 100e3  | 6.0   |
+| Straight       | straightcrack                        | 150e3      | 100e3  | 7.0   |
+| Straight       | straightcrack                        | 150e3      | 100e3  | 8.0   |
+| Straight       | straightcrack                        | 150e3      | 100e3  | 9.0   |
+| Straight       | straightcrack                        | 150e3      | 100e3  | 10.0  |
+| Oscillatory    | oscillatorycrack                     | 1000e3     | 800e3  | 5.0   |
+
+The data on $y$-axis can be calculated as:
+
+$$1/K_I = \alpha_T \Delta T \sqrt{Eb/\Gamma}$$

@@ -194,3 +194,5 @@ All of the combinations for different parameters that were used for generating t
 The data on $y$-axis can be calculated as:
 
 $$1/K_I = \alpha_T \Delta T \sqrt{Eb/\Gamma}$$
+
+Where, $K_I$ is the stress intensity factor for mode-I cracks, $\alpha_T (= 0.01)$ is the coefficient of thermal expansion, $\Delta T (= 1)$ is the change in temperature from cold to hot region, $E$ is Young's modulus, $b (= 1)$ is the half width of the strip and $\Gamma (= 1)$ is the energy release rate.

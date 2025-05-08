@@ -117,4 +117,44 @@ This phase diagram was taken from the works of [Mokhtar and Yves](https://journa
 - The points in green are the ones where straight cracks were observed.
 - The blue data point is where oscillatory crack was observed.
 
+**Note:** All of the clips in this section were generated using:
+- [Paraview](https://www.paraview.org/): To generate images from .pvd files.
+- [Shutter Encoder](https://www.shutterencoder.com/): To make videos from generated images from Paraview.
+- [EZgif website](https://ezgif.com/video-to-gif): To make gifs from videos.
+
 ## Reproducibility
+
+Clone the git repository
+
+```bash
+git clone https://github.com/rishabh022298/ME700_FinalProject.git
+```
+
+### Validation Files
+
+After cloning, navigate to the either folders in Validation folder:
+- simple_loading
+- thermal_loading
+
+Once you are in the desired directory, you can run the script on SCC by queuing the bash script:
+
+```bash
+qsub run.sh
+```
+
+Executing the above command will run that particular script.
+
+#### Simple loading
+When bash script from [simple_loading](https://github.com/rishabh022298/ME700_FinalProject/tree/main/Validation/simple_loading) folder is run, it generates a few files for visualisation:
+- JInt.txt: Data points for plotting J integral values.
+- phi.pvd: Visualising phase field evolution.
+
+J integral values can also be plotted using the script [plotting.m](https://github.com/rishabh022298/ME700_FinalProject/blob/main/Validation/simple_loading/plotting.m). Please don't forget to import the JInt.txt file first as JInt.
+
+#### Thermal loading
+When bash script from [thermal_loading](https://github.com/rishabh022298/ME700_FinalProject/tree/main/Validation/thermal_loading) folder is run, it generates:
+- JInt.txt
+- phi.pvd
+- u.pvd: For visualising the displacements
+- sxx.pvd, sxy.pvd, syy.pvd: Stress components
+

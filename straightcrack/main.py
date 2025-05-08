@@ -39,6 +39,7 @@ v_f = TestFunction(MFS)
 u, c_trans, c_rot = split(f)
 
 # Material and system parameters
+## Change values here to check different regions in the phase field
 Gc =  1          # Critical energy release rate
 l = 0.015
 lmbda = 30000

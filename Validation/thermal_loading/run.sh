@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #$ -m ea
-#$ -N Jint
+#$ -N thermal
 #$ -e error
 #$ -l h_rt=80:00:00
 #$ -pe omp 16

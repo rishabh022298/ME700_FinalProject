@@ -108,3 +108,9 @@ Now that we have ensured that the scripts are working fine, so we can move on to
 ![osc](figures/osc.gif)
 
 ### Phase Diagram
+
+This phase diagram was taken from the works of [Mokhtar and Yves](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.52.4105) and the data points from their plot were extracted using [this tool](https://web.eecs.utk.edu/~dcostine/personal/PowerDeviceLib/DigiTest/index.html).
+
+![phase](figures/phasediagram.png)
+
+The data points are provided in the Reproducibility section.

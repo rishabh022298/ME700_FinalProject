@@ -113,4 +113,8 @@ This phase diagram was taken from the works of [Mokhtar and Yves](https://journa
 
 ![phase](figures/phasediagram.png)
 
-The data points are provided in the Reproducibility section.
+- The points in red are the ones where no crack propagation was observed.
+- The points in green are the ones where straight cracks were observed.
+- The blue data point is where oscillatory crack was observed.
+
+## Reproducibility

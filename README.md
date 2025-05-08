@@ -196,3 +196,16 @@ The data on $y$-axis can be calculated as:
 $$1/K_I = \alpha_T \Delta T \sqrt{Eb/\Gamma}$$
 
 Where, $K_I$ is the stress intensity factor for mode-I cracks, $\alpha_T (= 0.01)$ is the coefficient of thermal expansion, $\Delta T (= 1)$ is the change in temperature from cold to hot region, $E$ is Young's modulus, $b (= 1)$ is the half width of the strip and $\Gamma (= 1)$ is the energy release rate.
+
+Please refer to Results section to check how crack propagation and other gifs were generated.
+
+## ME 700 Applied Skills
+
+Following skills were used:
+- Python Programming
+- Usage of open source softwares to visualise crack propagation
+- Writing variational form and residual
+- Calculating jacobian
+- FEniCS (although Legacy version was used but the concept remains same)
+- Phase field
+- Usage of Lagrange multipliers

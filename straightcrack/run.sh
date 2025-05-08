@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #$ -m ea
-#$ -N fract
+#$ -N straightcrack
 #$ -e error
 #$ -l h_rt=80:00:00
 #$ -pe omp 36
